@@ -1,0 +1,8 @@
+<% if(mahasiswa.length < 1){ %>
+<p>data masih kosong</p>
+<% } else{ %><% mahasiswa.forEach((mhs) => { %>
+<ul>
+  <li>nama: <%= mhs.nama %></li>
+  <li>email: <%= mhs.email %></li>
+</ul>
+<% })%><% }%>
